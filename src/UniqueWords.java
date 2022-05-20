@@ -6,7 +6,7 @@ public class UniqueWords {
     private BookReader book = new BookReader(".\\src\\WarAndPeace.txt");
 
     public UniqueWords() throws IOException {
-
+        addUniqueWordsToHashTable();
 
     }
 
@@ -17,7 +17,7 @@ public class UniqueWords {
 
 
         for(book.words.first(); book.words.current() != null; book.words.next()){
-            if(mht.keys.contains() == null){
+            if(mht.get(book.words.current()) == null){
                 mht.put(book.words.current(), book.words.current());
             }
         }
