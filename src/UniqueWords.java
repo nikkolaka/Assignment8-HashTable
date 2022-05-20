@@ -6,8 +6,8 @@ public class UniqueWords {
     private BookReader book = new BookReader(".\\src\\WarAndPeace.txt");
 
     public UniqueWords() throws IOException {
-        addUniqueWordsToHashTable();
 
+        addUniqueWordsToHashTable();
     }
 
     public void addUniqueWordsToHashTable(){
@@ -30,14 +30,6 @@ public class UniqueWords {
         System.out.println(mht.comparisons+" comparisons");
         System.out.println(mht.maxProbe+" max probe");
 
-        start = System.currentTimeMillis();
-
-        mht.toString();
-
-        now = System.currentTimeMillis();
-        duration = now - start;
-
-        System.out.println("Extracting the key-value pairs... in "+duration+" ms");
     }
 
 }
